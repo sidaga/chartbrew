@@ -102,8 +102,8 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
-    "start": "npm run setup && cross-env REACT_APP_VERSION=$npm_package_version node scripts/start.js",
-    "build": "npm run setup && cross-env REACT_APP_VERSION=$npm_package_version node scripts/build.js",
+    "start": "npm run setup && cross-env REACT_APP_VERSION=$npm_package_version node  scripts/start.js --openssl-legacy-provider",
+    "build": "npm run setup && cross-env REACT_APP_VERSION=$npm_package_version node scripts/build.js --openssl-legacy-provider",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "npm run setup && eslint src/",
     "lint-fix": "eslint src/ --fix",
